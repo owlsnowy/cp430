@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+
+</head>
+<body>
+
+<div data-role="page" id="FirstPage">
+
+	<div data-role="header">
+		<title>CP430 – Week 2</title>
+		<h1></h1>
+		<a href="#pagetwo" class="ui-btn ui-btn-inline" data-transition="fade">Go to Page Two</a>
+		<a href="#myPanel" class="ui-btn ui-btn-inline">Open Panel</a>
+	<div data-role="navbar">
+      <ul>
+        <li><a href="#FirstPage" class="ui-btn-active ui-state-persist" >Home</a></li>
+        <li><a href="#pagetwo">BOOKS</a></li>
+        <li><a href="#pageThree">Hobbies</a></li>
+      </ul>
+    </div>
+
+	</div>
+	<div role="main" class="ui-content">
+	     
+
+		<p>Emmett</p>
+		<p>Thunder Bay</p>
+	</div>
+
+	<div data-role="footer">
+		<a href="#FirstPage" class="ui-btn ui-btn-inline" data-transition="flip">home</a>
+	</div>
+	<div data-role="panel" id="myPanel">
+	<div role="main" class="ui-content">	
+		<a href="#" class="ui-btn  ui-btn-inline" data-rel="back" data-transition="slidefade">Go Back</a>
+		<div data-role="collapsible">
+			<h1>Character setup</h1>
+			<div data-role="collapsible">
+				<h1>Hair</h1>
+					<div data-role="collapsible">
+						<h1>Length</h1>
+						<label for="Bald">Bald</label>
+						<input type="radio" name="Length" id="Bald" value="Bald"><br>
+						<label for="Short">Short</label>
+						<input type="radio" name="Length" id="Short" value="Short"><br>
+						<label for="Medium">Medium</label>
+						<input type="radio" name="Length" id="Medium" value="Medium"><br>
+						<label for="Long">Long</label>
+						<input type="radio" name="Length" id="Long" value="Long" checked><br>
+					</div>
+					<div data-role="collapsible">
+						<h1>Colour</h1>
+							<label for="Blue">Blue</label>
+							<input type="radio" name="Colour" id="Blue" value="Blue"><br>
+							<label for="Green">Green</label>
+							<input type="radio" name="Colour" id="Green" value="Green"><br>
+							<label for="Black" >Black</label>
+							<input type="radio" name="Colour" id="Black" value="Black" checked><br>
+							<label for="ETC.">ETC.</label>
+							<input type="radio" name="Colour" id="ETC." value="ETC."><br>
+						</div>
+		
+			</div>
+			<div data-role="collapsible">
+				<h1>Sex</h1>
+					<label for="male">Male</label>
+					<input type="radio" name="gender" id="male" value="male"><br>
+					<label for="female">Female</label>
+					<input type="radio" name="gender" id="female" value="female" checked><br>
+			</div>
+			<div data-role="collapsible">
+				<h1>Race</h1>
+				<label for="Orc">Orc</label>
+				<input type="radio" name="Race" id="Orc" value="Orc"><br>
+				<label for="Elf">Elf</label>
+				<input type="radio" name="Race" id="Elf" value="Elf" checked><br>
+				<label for="Human">Human</label>
+				<input type="radio" name="Race" id="Human" value="Human"><br>
+				<label for="Gnome">Gnome</label>
+				<input type="radio" name="Race" id="Gnome" value="Gnome"><br>
+			</div>
+		</div>
+	</div>
+		
+	</div>
+
+</div>
+</div>
+<div data-role="page" id="pagetwo">
+
+	<div data-role="header">
+		<a href="#" class="ui-btn  ui-btn-inline" data-rel="back" data-transition="slidefade">Go Back</a>
+		<h1>BOOKS</h1>
+		<a href="#pageThree" class="ui-btn ui-btn-inline" data-transition="pop">Go to Page Three</a>
+	<div data-role="navbar">
+      <ul>
+        <li><a href="#FirstPage">Home</a></li>
+        <li><a href="#pagetwo" class="ui-btn-active ui-state-persist" >BOOKS</a></li>
+        <li><a href="#pageThree">Hobbies</a></li>
+      </ul>
+    </div>
+	</div>
+
+	<div role="main" class="ui-content">
+		<p>The Hobbit</p>
+		<p>The Hunger Games</p>
+		<p>The Dark tower</p>
+	</div>
+
+	<div data-role="footer">
+		<a href="#FirstPage" class="ui-btn ui-btn-inline" data-transition="flip">home</a>
+	</div>
+</div>
+<div data-role="page" id="pageThree">
+
+	<div data-role="header">
+		<a href="#" class="ui-btn" data-rel="back">Go Back</a>
+		<h1>Hobbies</h1>
+	<div data-role="navbar">
+      <ul>
+        <li><a href="#FirstPage">Home</a></li>
+        <li><a href="#pagetwo">BOOKS</a></li>
+        <li><a href="#pageThree" class="ui-btn-active ui-state-persist" >Hobbies</a></li>
+      </ul>
+    </div>
+	</div>
+
+	<div role="main" class="ui-content">
+		<p>Gaming</p>
+		<p>Programing</p>
+	</div>
+
+	<div data-role="footer">
+		<a href="#FirstPage" class="ui-btn ui-btn-inline" data-transition="flip">home</a>
+	</div>
+</div>
+
+</body>
+</html>
+

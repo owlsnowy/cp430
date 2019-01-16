@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<style>
+</style>
+
+</head>
+
+<body>
+<div>
+
+Your name: <input type="text" name="YourName" id="YourName" value=""><br>
+Pet: <input type="text" name="PetName" id="PetName" value=""><br>
+<button onclick="Store()">Store</button>
+<button onclick="Fetch()">Fetch</button>
+</div>
+<script>
+function Store() {
+$(document).ready(function(){
+	
+	 if (typeof(Storage) !== "undefined") {
+    
+		localStorage.setItem("yname", document.getElementById("YourName").value);
+	} 
+	if (typeof(Storage) !== "undefined") {
+    
+		sessionStorage.setItem("pname", document.getElementById("PetName").value);
+	} 
+	
+	});
+	}
+	function Fetch() {
+$(document).ready(function(){
+	
+	if (localStorage.getItem("yname") !== "undefined"){
+	document.getElementById("YourName").value = localStorage.getItem("yname");
+	} else {
+    document.getElementById("YourName").value = "Sorry, none avaliable";
+}
+	
+	});
+	
+	$(document).ready(function(){
+ if (sessionStorage.getItem("pname") !== null && sessionStorage.getItem("pname") !== "Nothing was saved here") {
+    document.getElementById("PetName").value = sessionStorage.getItem("pname");
+} else {
+	sessionStorage.setItem("pname", "Nothing was saved here");
+    document.getElementById("PetName").value = sessionStorage.getItem("pname");
+	
+}
+});
+	}
+</script>
+
+</body>
+</html>
+

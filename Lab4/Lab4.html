@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html >
+<head>
+
+<link rel="stylesheet" href="jquery.mobile-1.4.5.min.css">
+<script src="jquery-1.11.3.min.js"></script>
+<script src="jquery.mobile-1.4.5.min.js"></script>
+<style>
+tbody tr:nth-child(odd){
+background-color: #4C8BF5;
+color: #fff;
+}
+</style>
+
+</head>
+
+<body>
+
+<div data-role="page" id="FirstPage" data-theme="b">
+	<div data-role="header">
+		<h1>End of jQuery Mobile</h1>
+		
+	</div<div data-role="main" class="ui-content">
+	<input data-type="search" id="myInput" placeholder="Search for names.." title="Type in a name">
+
+	<ul data-role="listview" data-autodividers="true" data-filter="true" id="myUL" data-input="#myInput">
+<li ><a href="#" onclick="getValue(this);">Allenopithecus</a></li>
+<li ><a href="#" onclick="getValue(this);">Allocebus</a></li>
+<li ><a href="#" onclick="getValue(this);">Allochrocebus</a></li>
+<li ><a href="#" onclick="getValue(this);">Alouatta</a></li>
+<li ><a href="#" onclick="getValue(this);">Aotus</a></li>
+<li ><a href="#" onclick="getValue(this);">Arctocebus</a></li>
+<li ><a href="#" onclick="getValue(this);">Ateles</a></li>
+<li ><a href="#" onclick="getValue(this);">Avahi</a></li>
+<li ><a href="#" onclick="getValue(this);">Brachyteles</a></li>
+<li ><a href="#" onclick="getValue(this);">Cacajao</a></li>
+<li ><a href="#" onclick="getValue(this);">Callibella</a></li>
+<li><a href="#" onclick="getValue(this);">Callicebus</a></li>
+<li><a href="#" onclick="getValue(this);">Callimico</a></li>
+<li><a href="#" onclick="getValue(this);">Callithrix</a></li>
+<li><a href="#" onclick="getValue(this);">Carlito</a></li>
+<li><a href="#" onclick="getValue(this);">Cebuella</a></li>
+<li><a href="#" onclick="getValue(this);">Cebus</a></li>
+<li><a href="#" onclick="getValue(this);">Cephalopachus</a></li>
+<li><a href="#" onclick="getValue(this);">Cercocebus</a></li>
+<li><a href="#" onclick="getValue(this);">Cercopithecus</a></li>
+<li><a href="#" onclick="getValue(this);">Cheirogaleus</a></li>
+<li><a href="#" onclick="getValue(this);">Chiropotes</a></li>
+<li><a href="#" onclick="getValue(this);">Chlorocebus</a></li>
+<li><a href="#" onclick="getValue(this);">Colobus</a></li>
+<li><a href="#" onclick="getValue(this);">Daubentonia</a></li>
+<li><a href="#" onclick="getValue(this);">Erythrocebus</a></li>
+<li><a href="#" onclick="getValue(this);">Eulemur</a></li>
+<li><a href="#" onclick="getValue(this);">Euoticus</a></li>
+<li><a href="#"onclick="getValue(this);">Galago</a></li>
+<li><a href="#" onclick="getValue(this);">Gorilla</a></li>
+<li><a href="#" onclick="getValue(this);">Hapalemur</a></li>
+<li><a href="#" onclick="getValue(this);">Homo</a></li>
+<li><a href="#" onclick="getValue(this);">Hoolock</a></li>
+<li><a href="#" onclick="getValue(this);">Hylobates</a></li>
+<li><a href="#" onclick="getValue(this);">Indri</a></li>
+<li><a href="#" onclick="getValue(this);">Lagothrix</a></li>
+<li><a href="#" onclick="getValue(this);">Lemur</a></li>
+<li><a href="#" onclick="getValue(this);">Leontopithecus</a></li>
+<li><a href="#" onclick="getValue(this);">Lepilemur</a></li>
+<li><a href="#" onclick="getValue(this);">Lophocebus</a></li>
+<li><a href="#" onclick="getValue(this);">Loris</a></li>
+<li><a href="#" onclick="getValue(this);">Macaca</a></li>
+<li><a href="#" onclick="getValue(this);">Mandrillus</a></li>
+<li><a href="#" onclick="getValue(this);">Mico</a></li>
+<li><a href="#" onclick="getValue(this);">Microcebus</a></li>
+<li><a href="#" onclick="getValue(this);">Miopithecus</a></li>
+<li><a href="#" onclick="getValue(this);">Mirza</a></li>
+<li><a href="#" onclick="getValue(this);">Nasalis</a></li>
+<li><a href="#" onclick="getValue(this);">Nomascus</a></li>
+<li><a href="#" onclick="getValue(this);">Nycticebus</a></li>
+<li><a href="#" onclick="getValue(this);">Pongo</a></li>
+<li><a href="#" onclick="getValue(this);">Oreonax</a></li>
+<li><a href="#"onclick="getValue(this);">Otolemur</a></li>
+<li><a href="#"onclick="getValue(this);">Pan</a></li>
+<li><a href="#"onclick="getValue(this);">Papio</a></li>
+<li><a href="#"onclick="getValue(this);">Perodicticus</a></li>
+<li><a href="#"onclick="getValue(this);">Phaner</a></li>
+<li><a href="#"onclick="getValue(this);">Piliocolobus</a></li>
+<li><a href="#"onclick="getValue(this);">Pithecia</a></li>
+<li><a href="#"onclick="getValue(this);">Presbytis</a></li>
+<li><a href="#"onclick="getValue(this);">Procolobus</a></li>
+<li><a href="#"onclick="getValue(this);">Prolemur</a></li>
+<li><a href="#"onclick="getValue(this);">Propithecus</a></li>
+<li><a href="#"onclick="getValue(this);">Pseudopotto</a></li>
+<li><a href="#"onclick="getValue(this);">Pygathrix</a></li>
+<li><a href="#"onclick="getValue(this);">Rhinopithecus</a></li>
+<li><a href="#"onclick="getValue(this);">Rungwecebus</a></li>
+<li><a href="#"onclick="getValue(this);">Saguinus</a></li>
+<li><a href="#"onclick="getValue(this);">Saimiri</a></li>
+<li><a href="#"onclick="getValue(this);">Scuirocheirus</a></li>
+<li><a href="#"onclick="getValue(this);">Semnopithecus</a></li>
+<li><a href="#"onclick="getValue(this);">Simias</a></li>
+<li><a href="#"onclick="getValue(this);">Symphalangus</a></li>
+<li><a href="#"onclick="getValue(this);">Tarsius</a></li>
+<li><a href="#"onclick="getValue(this);">Theropithecus</a></li>
+<li><a href="#"onclick="getValue(this);">Trachypithecus</a></li>
+<li><a href="#"onclick="getValue(this);">Varecia</a></li>
+
+</ul>
+
+	Date: <input type="date" name="Date" id="Date" value=""><br>
+	Count: <input type="text" name="Count" id="Count" value=""><br>
+<table id="AnimalTable">
+	<thead>
+		<tr>
+			<th>Animal</th>
+			<th>Date observed</th>
+			<th>Animal count</th>
+		</tr>
+	</thead>
+	<tbody id="AnimalTableBody">
+	</tbody>
+</table>
+
+<script>
+var x;
+function getValue(a) {
+		 x = a.innerHTML;
+	}
+function Submit() {
+		$(document).ready(function(){
+		
+
+	var table = document.getElementById("AnimalTableBody");
+    var row = table.insertRow(0);
+    var cell1 = row.insertCell(0);
+    var cell2 = row.insertCell(1);
+	var cell3 = row.insertCell(2);
+	cell1.innerHTML = x;
+    cell2.innerHTML = document.getElementById("Date").value;
+    cell3.innerHTML = document.getElementById("Count").value;
+		});
+}
+var tablecontent;
+function Store(){
+tablecontent = document.getElementById("AnimalTable").innerHTML;
+
+		localStorage.setItem("tablecontent", tablecontent);
+
+}
+function Fetch(){
+
+	if (localStorage.getItem("tablecontent") !== "undefined"){
+	document.getElementById("AnimalTable").innerHTML = localStorage.getItem("tablecontent");
+	} else{
+	alert("no table saved");
+	}
+
+
+}
+var surprise = 0;
+function Surprise(){
+surprise = surprise+1;
+sessionStorage.setItem("surprise", surprise);
+alert("this button has been pressed " + sessionStorage.getItem("surprise") + " many times this session.");
+}
+</script>
+
+
+</div>
+	<div data-role="footer">
+	<button onclick="Submit()">Submit</button>
+	<button onclick="Store()" data-icon="plus">Save</button>
+	<button onclick="Fetch()" data-icon="recycle">Load</button>
+	<button onclick="Surprise()" data-icon="alert">Surprise</button>
+	<a href="#myPanel" onclick="Load()" class="ui-btn ui-btn-inline ui-icon-user ui-btn-icon-left" >Open Panel</a>
+	<h1>Too much work</h1>
+	</div>
+		<div data-role="panel" id="myPanel" >
+		<div role="main" class="ui-content">
+			First Name: <input type="text" name="First" id="First" value=""><br>
+			Last Name: <input type="text" name="Last" id="Last" value=""><br>
+			Department: <input type="text" name="Department" id="Department" value=""><br>
+			<button onclick="Save()">Save</button>
+			<script>
+			function Save(){
+			localStorage.setItem("fname", document.getElementById("First").value);
+			localStorage.setItem("lname", document.getElementById("Last").value);
+			localStorage.setItem("dname", document.getElementById("Department").value);
+			}
+			function Load(){
+			if(localStorage.getItem("fname") !== ""&&localStorage.getItem("lname") !== ""&&localStorage.getItem("dname") !== ""){
+			 document.getElementById("First").value = localStorage.getItem("fname");
+			 document.getElementById("Last").value  = localStorage.getItem("lname");
+			 document.getElementById("Department").value  = localStorage.getItem("dname");
+			}else{
+			alert("Nothing has been saved to local storage")
+			}
+			}
+			</script>
+			
+		</div>
+	</div>
+		
+	</div>
+</div>
+</body>
+
+
+</html>
+
