@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<style>
+	th:nth-child(even){background-color: #f2f2f2;}
+	td:nth-child(even){background-color: #f2f2f2;}
+</style>
+
+</head>
+
+<body>
+
+
+<div data-role="page" id="FirstPage">
+
+	<div data-role="header">
+		<h1>Week 3-Tables</h1>
+		</div>
+	<div data-role="main" class="ui-content">
+	<table data-role="table" data-mode="columntoggle" class="ui-responsive ui-shadow" data-column-btn-text="Click here to choose fields..." id="myTable">
+	<thead>
+		<tr>
+			<th data-priority="1">Name</th>
+			<th data-priority="5">Age</th>
+			<th data-priority="2">Major</th>
+			<th data-priority="3">Home City</th>
+			<th>Student ID</th>
+			<th data-priority="4">Residence Name</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>George</td>
+			<td>22</td>
+			<td>Electronics engineering</td>
+			<td>Thunder Bay</td>
+			<td>12345678</td>
+			<td>Boreal</td>
+		</tr>
+		<tr>
+			<td>Frank</td>
+			<td>23</td>
+			<td>Electronics engineering</td>
+			<td>Thunder Bay</td>
+			<td>12345679</td>
+			<td>Boreal</td>
+		</tr>
+		<tr>
+			<td>Steve</td>
+			<td>22</td>
+			<td>Electronics engineering</td>
+			<td>Thunder Bay</td>
+			<td>12345688</td>
+			<td>Boreal</td>
+			
+		</tr>
+		<tr>
+			<td>Juan</td>
+			<td>100000000000000000000000</td>
+			<td>Electronics engineering</td>
+			<td>Thunder Bay</td>
+			<td>12345699</td>
+			<td>Boreal</td>
+		</tr>
+	</tbody>
+	</table>
+	</div>
+
+	<div data-role="footer">
+	<p>Emmett Parker</p>
+	<a href="#FirstPage" class="ui-btn ui-btn-inline" data-transition="fade">Tables</a>
+	<a href="#SecondPage" class="ui-btn ui-btn-inline" data-transition="fade">Lists</a>
+	<a href="#ThirdPage" class="ui-btn ui-btn-inline" data-transition="fade">Forms</a>
+	</div>
+</div>
+<div data-role="page" id="SecondPage">
+
+	<div data-role="header">
+		<h1>Week 3-Lists</h1>
+	</div>
+	<div data-role="main" class="ui-content">
+	<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+
+<ul id="myUL">
+<li><a href="#">Allenopithecus</a></li>
+<li><a href="#">Allocebus</a></li>
+<li><a href="#">Allochrocebus</a></li>
+<li><a href="#">Alouatta</a></li>
+<li><a href="#">Aotus</a></li>
+<li><a href="#">Arctocebus</a></li>
+<li><a href="#">Ateles</a></li>
+<li><a href="#">Avahi</a></li>
+<li><a href="#">Brachyteles</a></li>
+<li><a href="#">Cacajao</a></li>
+<li><a href="#">Callibella</a></li>
+<li><a href="#">Callicebus</a></li>
+<li><a href="#">Callimico</a></li>
+<li><a href="#">Callithrix</a></li>
+<li><a href="#">Carlito</a></li>
+<li><a href="#">Cebuella</a></li>
+<li><a href="#">Cebus</a></li>
+<li><a href="#">Cephalopachus</a></li>
+<li><a href="#">Cercocebus</a></li>
+<li><a href="#">Cercopithecus</a></li>
+<li><a href="#">Cheirogaleus</a></li>
+<li><a href="#">Chiropotes</a></li>
+<li><a href="#">Chlorocebus</a></li>
+<li><a href="#">Colobus</a></li>
+<li><a href="#">Daubentonia</a></li>
+<li><a href="#">Erythrocebus</a></li>
+<li><a href="#">Eulemur</a></li>
+<li><a href="#">Euoticus</a></li>
+<li><a href="#">Galago</a></li>
+<li><a href="#">Gorilla</a></li>
+<li><a href="#">Hapalemur</a></li>
+<li><a href="#">Homo</a></li>
+<li><a href="#">Hoolock</a></li>
+<li><a href="#">Hylobates</a></li>
+<li><a href="#">Indri</a></li>
+<li><a href="#">Lagothrix</a></li>
+<li><a href="#">Lemur</a></li>
+<li><a href="#">Leontopithecus</a></li>
+<li><a href="#">Lepilemur</a></li>
+<li><a href="#">Lophocebus</a></li>
+<li><a href="#">Loris</a></li>
+<li><a href="#">Macaca</a></li>
+<li><a href="#">Mandrillus</a></li>
+<li><a href="#">Mico</a></li>
+<li><a href="#">Microcebus</a></li>
+<li><a href="#">Miopithecus</a></li>
+<li><a href="#">Mirza</a></li>
+<li><a href="#">Nasalis</a></li>
+<li><a href="#">Nomascus</a></li>
+<li><a href="#">Nycticebus</a></li>
+<li><a href="#">Pongo</a></li>
+<li><a href="#">Oreonax</a></li>
+<li><a href="#">Otolemur</a></li>
+<li><a href="#">Pan</a></li>
+<li><a href="#">Papio</a></li>
+<li><a href="#">Perodicticus</a></li>
+<li><a href="#">Phaner</a></li>
+<li><a href="#">Piliocolobus</a></li>
+<li><a href="#">Pithecia</a></li>
+<li><a href="#">Presbytis</a></li>
+<li><a href="#">Procolobus</a></li>
+<li><a href="#">Prolemur</a></li>
+<li><a href="#">Propithecus</a></li>
+<li><a href="#">Pseudopotto</a></li>
+<li><a href="#">Pygathrix</a></li>
+<li><a href="#">Rhinopithecus</a></li>
+<li><a href="#">Rungwecebus</a></li>
+<li><a href="#">Saguinus</a></li>
+<li><a href="#">Saimiri</a></li>
+<li><a href="#">Scuirocheirus</a></li>
+<li><a href="#">Semnopithecus</a></li>
+<li><a href="#">Simias</a></li>
+<li><a href="#">Symphalangus</a></li>
+<li><a href="#">Tarsius</a></li>
+<li><a href="#">Theropithecus</a></li>
+<li><a href="#">Trachypithecus</a></li>
+<li><a href="#">Varecia</a></li>
+
+</ul>
+
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+
+        }
+    }
+}
+</script>
+	</div>
+
+	<div data-role="footer">
+	<p>Emmett Parker</p>
+	<a href="#FirstPage" class="ui-btn ui-btn-inline" data-transition="fade">Tables</a>
+	<a href="#SecondPage" class="ui-btn ui-btn-inline" data-transition="fade">Lists</a>
+	<a href="#ThirdPage" class="ui-btn ui-btn-inline" data-transition="fade">Forms</a>
+   
+	</div>
+</div>
+<div data-role="page" id="ThirdPage" onload="ReadyPage()">
+
+	<div data-role="header">
+		<h1>Fitness Form</h1>
+		<script>
+		$( window ).on( "orientationchange", function( event ) {
+		if(event.orientation == "portrait") $("h1").css({"background-color":"orange"});
+		else $("h1").css({"background-color":"green"});});
+		</script>
+		
+	</div>
+	<div data-role="main" class="ui-content">
+	
+
+	<input type="range" name="points" id="points" value="50" min="1" max="700" data-show-value="true">
+	</input><br>
+	<fieldset data-role="controlgroup">
+	<legend>How do you feel?</legend>
+	<input type="checkbox" name="Feel" id="Energetic" value="Energetic"><label for="Energetic">I am Energetic</label><br>
+	<input type="checkbox" name="Feel" id="Tired" value="Tired"><label for="Tired">I am Tired</label><br>
+	<input type="checkbox" name="Feel" id="Sore" value="Sore"><label for="Sore">I am Sore</label><br>
+	<input type="checkbox" name="Feel" id="Dead" value="Dead"><label for="Dead">I am Dead</label><br>
+	<input type="checkbox" name="Feel" id="Alive" value="Alive"><label for="Alive">I am Alive</label>
+	</fieldset>
+		<div data-role="rangeslider">
+			<label for="Weight-min">Weight:</label>
+			<input type="range" name="Weight-min" id="Weight-min" value="200" min="1" max="700">
+			<label for="Weight-max">Weight:</label>
+			<input type="range" name="Weight-max" id="Weight-max"value="300" min="1" max="700">
+		</div>
+		<select name="Activity" id="Activity">
+			<optgroup label="cardio">
+				<option value="Bike">Bike</option>
+				<option value="Running">Running</option>
+			</optgroup>
+			<optgroup label="Weights">
+				<option value="Jumping">Jumping</option>
+				<option value="Squats">Squats</option>
+				<option value="Lifting">Lifting</option>
+			</optgroup>
+		</select>
+	</div>
+
+	<a href="#myPopup" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all ui-icon-check ui-btn-icon-left">Show Popup Form</a>
+
+    <div data-role="popup" id="myPopup" class="ui-content" style="min-width:250px;" data-theme="b">
+		<p>I would rather be anywhere but here… Tahiti, Australia, Antarctica…</p>
+	</div>
+	<script>
+$(document).on("pagecreate","#ThirdPage",function(){
+  $("body").on("swipeleft",function(){
+    window.alert("this functionality is not yet finished");
+  });                       
+});
+</script>
+<script>
+$(document).on("pageinit","#ThirdPage",function(){
+    window.alert("page ready");                      
+});
+</script>
+<script>
+$(document).on("pagecreate","#ThirdPage",function(){
+  $("body").on("swiperight",function(){
+    window.alert("the information has been saved to the server");
+  });                       
+});
+</script>
+
+	<div data-role="footer">
+	<p>Emmett Parker</p>
+	<a href="#FirstPage" class="ui-btn ui-btn-inline" data-transition="fade">Tables</a>
+	<a href="#SecondPage" class="ui-btn ui-btn-inline" data-transition="fade">Lists</a>
+	<a href="#ThirdPage" class="ui-btn ui-btn-inline" data-transition="fade">Forms</a>
+    
+	</div>
+</div>
+</body>
+</html>
+
